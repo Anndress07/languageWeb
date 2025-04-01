@@ -1,0 +1,31 @@
+
+
+.welcomeHeader {
+  width: 100vw;
+  min-height: 100vh; /* Make sure it covers full viewport */
+  max-width: 100%;
+  background: /*linear-gradient( rgba(8,0,58,0.7),rgba(8,0,58,0.7)),*/ url('../../assets/images/welcomeHeaderBlueBackground.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcomeHeader-text{
+  text-align: center;
+  max-width: 800px;
+}
+.welcomeHeader-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.welcomeHeader-text p{
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+}

@@ -1,0 +1,22 @@
+.smallSeparator{
+  width: 100vw;
+  min-height: 5vh; /* Make sure it covers full viewport */
+  max-width: 100%;
+  background: linear-gradient( rgba(5, 5, 85, 1),rgba(5, 5, 85, 1));
+  border: 2px solid #050555;
+}
+.textTitle1{
+  margin: 10;
+  padding: 10;
+  /* padding: 6rem; */
+  margin-top: 5%;
+  margin-left: 5%;
+  text-align: left;
+  /* line-height: 1; */
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+
+
+
+}
+
