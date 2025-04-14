@@ -2,6 +2,7 @@
 import './Navbar.css'
 import logo from '../../assets/images/img1.png'
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-scroll';
 
 const Navbar = ({ headerRef }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,8 +26,8 @@ const Navbar = ({ headerRef }) => {
     <nav className={`container ${isVisible ? 'visible' : 'hidden'}`}>
       <img src={logo} className="logo" alt = "" />
       <ul>
-        <li>Home</li>
-        <li>Features</li>
+        <li> <Link to='textTitle1' smooth={true} duration={500} offset={-200}> Home </Link></li>
+        <li><Link to='card-container' smooth={true} duration={500} offset={-200}> Features </Link></li>
         <li><button className='btn'>Contact</button></li>
         
       </ul>

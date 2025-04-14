@@ -5,6 +5,7 @@ import Card from '../FeaturesSection/FeaturesSection';
 import translationVector from "../../assets/images/translVecWhite.png"
 import suggestionVector from "../../assets/images/suggestionVecWhite.png"
 import flashcardVector from "../../assets/images/flashcardVector.png"
+import databaseVector from  "../../assets/images/dbVector.png"
 
 
 const WelcomeBody = () => {
@@ -41,13 +42,23 @@ const WelcomeBody = () => {
             description={"Customizable tools aimed to improve your learning    "}/>
           <Card 
             title={"+10K different stories"} 
+            image={databaseVector}
+            imageSize={'85px'}
+            topMargin={'70px'}
+            leftMargin={'70px'}  
             description={"With a high variety of topics and skill levels! "}/>
-          
         </div>
+        
+
       </div>
          {/* <span style={{ fontWeight: 'bold', fontFamily: '"Inter", sans-serif' }}>fast, efficiently</span> */}
       
+      <div className='bottomContainer'>
+        <button>Log in</button>
+        <button>Try it</button>
+      </div>
     </div>
+    
 
   );
 }

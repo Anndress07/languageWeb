@@ -7,10 +7,10 @@ const WelcomeHeader = forwardRef((props, ref)  => {
       <div className='welcomeHeader-text'>
         <h1> start learning now</h1> 
         {/* <p> descriptionnnn</p> */}
-        <button className='btn'> get started - it's free</button>
+        <button> get started - it's free</button>
         <h1 style={{ marginTop: '40px' }}> or sign in for a better experience</h1> 
         {/* <p> descriptionnnn</p> */}
-        <button className='btn' > sign in - it's also free</button>
+        <button > sign in - it's also free</button>
       </div>
       
     </div>
