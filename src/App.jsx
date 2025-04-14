@@ -1,4 +1,8 @@
 import React, {useRef} from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import Navbar from './components/Navbar/Navbar'
 import WelcomeHeader from './components/WelcomeHeader/WelcomeHeader'
 import WelcomeBody from './components/WelcomeBody/WelcomeBody'
@@ -9,47 +13,14 @@ const App = () => {
   const headerRef = useRef(null);
   
   return (
-    <div>
-      <WelcomeHeader ref={headerRef} />
-      <Navbar headerRef={headerRef}/>
-      <Navbar fade={false}/>
-      <WelcomeBody/>
-      <div>
-       
-      </div>
-      
-      
-      
-
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-      <h1> test </h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element ={<Home/>} />
+        <Route path='login' element={<Login/>} />
+        <Route path='register' element={<Register/>} />
+      </Routes>
+    </Router>
+    
   )
 }
 
